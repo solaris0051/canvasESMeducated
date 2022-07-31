@@ -3,6 +3,7 @@
 function degToRad(degrees) {
   return degrees * Math.PI / 180;
 }
+let raf;
 
 class Circle {
   constructor(ctx, listId, radius, x, y, color) {
@@ -12,7 +13,7 @@ class Circle {
     this.x = x;
     this.y = y;
     this.color = color;
-    this.name = 'circle';
+    this.name = '円';
   }
 
   draw() {
@@ -22,19 +23,39 @@ class Circle {
     this.ctx.fill();
   }
 
-  reportArea() {
-    let listItem = document.createElement('li');
-    listItem.textContent = `${this.name} area is ${Math.round(Math.PI * (this.radius * this.radius))}px squared.`
+  act() {
+    this.ctx.clearRect(0,0, this.canvas.width, this.canvas.height);
+    vx = 5;
+    vy = 2;
+    this.ctx.draw();
+    this.ctx.x += vx;
+    this.ctx.y += vy;
+    this.ctx.vy *= .99;
+    this.ctx.vy += .25;
 
-    let list = document.getElementById(this.listId);
+    if (this.ctx.y + this.ctx.vy > canvas.height ||
+        this.ctx.y + this.ctx.vy < 0) {
+      this.ctx.vy = -this.ctx.vy;
+    }
+    if (this.ctx.x + this.ctx.vx > canvas.width ||
+        this.ctx.x + this.ctx.vx < 0) {
+      this.ctx.vx = -this.ctx.vx;
+    }
+
+    raf = window.requestAnimationFrame(act);
+  }
+
+  reportArea() {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${this.name} : 面積は ${Math.round(Math.PI * (this.radius * this.radius))}平方px(ピクセル)です。`
+    const list = document.getElementById(this.listId);
     list.appendChild(listItem);
   }
 
   reportPerimeter() {
-    let listItem = document.createElement('li');
-    listItem.textContent = `${this.name} circumference is ${Math.round(2 * Math.PI * this.radius)}px.`
-
-    let list = document.getElementById(this.listId);
+    const listItem = document.createElement('li');
+    listItem.textContent = `${this.name} : 円周長は ${Math.round(2 * Math.PI * this.radius)}px(ピクセル)です。`
+    const list = document.getElementById(this.listId);
     list.appendChild(listItem);
   }
 }

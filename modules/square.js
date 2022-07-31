@@ -8,7 +8,7 @@ class Square {
     this.x = x;
     this.y = y;
     this.color = color;
-    this.name = 'square';
+    this.name = '正方形';
   }
 
   draw() {
@@ -17,18 +17,16 @@ class Square {
   }
 
   reportArea() {
-    let listItem = document.createElement('li');
-    listItem.textContent = `${this.name} area is ${this.length * this.length}px squared.`
-
-    let list = document.getElementById(this.listId);
+    const listItem = document.createElement('li');
+    listItem.textContent = `${this.name} : 面積は ${this.length * this.length}平方px(ピクセル)です。`
+    const list = document.getElementById(this.listId);
     list.appendChild(listItem);
   }
 
   reportPerimeter() {
-    let listItem = document.createElement('li');
-    listItem.textContent = `${this.name} perimeter is ${this.length * 4}px.`
-
-    let list = document.getElementById(this.listId);
+    const listItem = document.createElement('li');
+    listItem.textContent = `${this.name} : 四辺の合計長は ${this.length * 4}px(ピクセル)です。`
+    const list = document.getElementById(this.listId);
     list.appendChild(listItem);
   }
 }
