@@ -28,7 +28,6 @@ circleBtn1.addEventListener('click', () => {
   import('./modules/circle.js').then((Module) => {
     const circle1 = new Module.Circle(myCanvas.ctx, myCanvas.listId, 25, 125, 75, colors.green);
     circle1.draw();
-    circle1.act();
     circle1.reportArea();
     circle1.reportPerimeter();
   })
