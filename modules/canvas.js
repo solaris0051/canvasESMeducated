@@ -16,7 +16,7 @@ class Canvas {
 			const canvasElem = document.createElement('canvas');
 			this.parent.appendChild(divWrapper);
 			divWrapper.appendChild(canvasElem);
-			divWrapper.id = this.id;
+			canvasElem.id = this.id;
 			canvasElem.width = this.width;
 			canvasElem.height = this.height;
 			this.ctx = canvasElem.getContext('2d');

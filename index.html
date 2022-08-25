@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'self';font-src 'self';style-src 'self';object-src 'none'">
+	<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'self';font-src 'self';style-src 'self';object-src 'none'"> -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Adopting-ESM-with-2D-contexts-put-on-a-canvas.">
 	<title>canvasESMeducated</title>
@@ -13,13 +13,15 @@
 </head>
 
 <body>
-	<button class="square1">正方形1</button>
-	<button class="square2">正方形2</button>
-	<button class="circle1">円1</button>
-	<button class="circle2">円2</button>
-	<button class="triangle1">正三角形1</button>
-	<button class="triangle2">正三角形2</button>
-	<button class="action">起動</button>
+		<main>
+			<button class="square">斜めに連なる静止した4つの正方形</button>
+			<button class="circle">重なり合った4つの円</button>
+			<button class="triangle">斜めに連なる静止した正三角形</button>
+			<button class="action">暴円(円が現われ次第、canvas内のお好きなところをclickしてください。click回数はお任せいたします。)</button>
+		</main>
+	<footer>
+		Since Jan, 2022 (C) Y.K
+	</footer>
 </body>
 
 </html>
