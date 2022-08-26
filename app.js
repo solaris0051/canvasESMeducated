@@ -7,7 +7,7 @@ const circleBtn = document.querySelector(".circle");
 const triangleBtn = document.querySelector(".triangle");
 
 // creating a canvas.
-const Canv0 = new Canvas(700, 700);
+const Canv0 = new Canvas(800, 800);
 Canv0.create();
 
 // dynamic import(drawing squares on the canvas)
