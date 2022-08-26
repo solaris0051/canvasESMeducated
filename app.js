@@ -13,42 +13,50 @@ Canv0.create();
 // dynamic import(drawing squares on the canvas)
 squareBtn.addEventListener("click", () => {
   import("./modules/square.js").then(Module => {
-    const square1 = new Module.Square(Canv0.ctx, 100, 40, 100, colors.purple);
+    const square1 = new Module.Square(Canv0.ctx, 100, 0, 0, colors.purple);
     square1.draw();
-    const square2 = new Module.Square(Canv0.ctx, 110, 141, 200, colors.yellow);
+    const square2 = new Module.Square(Canv0.ctx, 125, 100, 100, colors.yellow);
     square2.draw();
-    const square3 = new Module.Square(Canv0.ctx, 121, 250, 300, colors.purple);
+    const square3 = new Module.Square(Canv0.ctx, 156.25, 225, 225, colors.purple);
     square3.draw();
-    const square4 = new Module.Square(Canv0.ctx, 132, 370, 400, colors.yellow);
+    const square4 = new Module.Square(Canv0.ctx, 195.3125, 381.25, 381.25, colors.yellow);
     square4.draw();
+    const square5 = new Module.Square(Canv0.ctx, 223.4375, 576.5625, 576.5625, colors.purple);
+    square5.draw();
   });
 });
 
 // dynamic import(drawing circles on the canvas)
 circleBtn.addEventListener("click", () => {
   import("./modules/circle.js").then(Module => {
-    const circle1 = new Module.Circle(Canv0.ctx, 120, 400, 120, colors.green);
+    const circle1 = new Module.Circle(Canv0.ctx, 200, 200, 600, colors.green);
     circle1.draw();
-    const circle2 = new Module.Circle(Canv0.ctx, 100, 400, 140, colors.blue);
+    const circle2 = new Module.Circle(Canv0.ctx, 100, 200, 500, colors.blue);
     circle2.draw();
-    const circle3 = new Module.Circle(Canv0.ctx, 80, 400, 160, colors.green);
+    const circle3 = new Module.Circle(Canv0.ctx, 50, 200, 500, colors.green);
     circle3.draw();
-    const circle4 = new Module.Circle(Canv0.ctx, 60, 400, 180, colors.blue);
+    const circle4 = new Module.Circle(Canv0.ctx, 100, 200, 700, colors.blue);
     circle4.draw();
+    const circle5 = new Module.Circle(Canv0.ctx, 50, 200, 700, colors.green);
+    circle5.draw();
   });
 });
 
 // dynamic import(drawing triangles on the canvas)
 triangleBtn.addEventListener("click", () => {
   import("./modules/triangle.js").then(Module => {
-    const triangle1 = new Module.Triangle(Canv0.ctx, 113, 680, 100, colors.red);
+    const triangle1 = new Module.Triangle(Canv0.ctx, 113, 687, 0, colors.red);
 		triangle1.draw();
-		const triangle2 = new Module.Triangle(Canv0.ctx, 113, 624, 200, colors.orange);
+		const triangle2 = new Module.Triangle(Canv0.ctx, 113, 630.5, 97.918, colors.orange);
     triangle2.draw();
-		const triangle3 = new Module.Triangle(Canv0.ctx, 113, 556, 300, colors.red);
+		const triangle3 = new Module.Triangle(Canv0.ctx, 113, 574, 0, colors.red);
     triangle3.draw();
-		const triangle4 = new Module.Triangle(Canv0.ctx, 113, 500, 400, colors.orange);
+		const triangle4 = new Module.Triangle(Canv0.ctx, 113, 517.5, 97.918, colors.orange);
     triangle4.draw();
+    const triangle5 = new Module.Triangle(Canv0.ctx, 113, 461, 0, colors.red);
+    triangle5.draw();
+    const triangle6 = new Module.Triangle(Canv0.ctx, 113, 574, 195.836, colors.red);
+    triangle6.draw();
 	});
 });
 
