@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self';script-src 'self';font-src 'self';style-src 'self';object-src 'none'"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Adopting-ESM-with-2D-contexts-put-on-a-canvas."
+    />
+    <title>canvasESMeducated</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <button class="square"><p>斜めに連なる静止した4つの正方形</p></button>
+        <button class="circle"><p>重なり合った4つの円</p></button>
+        <button class="triangle">
+          <p>斜めに連なる静止した4つの正三角形</p>
+        </button>
+        <button class="action">
+          <p>
+            暴円
+            (円が現われ次第、canvas内のお好きなところをclickしてください。clickするほどよく暴れます。)
+          </p>
+        </button>
+        <button class="clear">
+          <p>Clear</p>
+        </button>
+      </header>
+      <main>
+        <canvas id="canvas"></canvas>
+      </main>
+      <footer>
+        <p>Since Jan, 2022 (C) Y.K</p>
+      </footer>
+    </div>
+  </body>
+</html>
