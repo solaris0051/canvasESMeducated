@@ -1,7 +1,7 @@
 {
   "name": "canvasesmeducated",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![CodeQL](https://github.com/solaris0051/canvasESMeducated/actions/workflows/codeql.yml/badge.svg)](https://github.com/solaris0051/canvasESMeducated/actions/workflows/codeql.yml)\r [![CodeFactor](https://www.codefactor.io/repository/github/solaris0051/canvasesmeducated/badge)](https://www.codefactor.io/repository/github/solaris0051/canvasesmeducated)",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,5 +28,14 @@
   },
   "optionalDependencies": {
     "win-node-env": "^0.6.1"
-  }
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solaris0051/canvasESMeducated.git"
+  },
+  "bugs": {
+    "url": "https://github.com/solaris0051/canvasESMeducated/issues"
+  },
+  "homepage": "https://github.com/solaris0051/canvasESMeducated#readme"
 }
