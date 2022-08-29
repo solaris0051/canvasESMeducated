@@ -25,7 +25,7 @@ export const CanvasAnim = () => {
     circle.x += circle.vx;
     circle.y += circle.vy;
     circle.vy *= 0.999;
-    circle.vy += 1.99;
+    circle.vy += 0.555;
     if (circle.y + circle.vy > canvas.height || circle.y + circle.vy < 0) {
       circle.vy = -circle.vy;
     }
