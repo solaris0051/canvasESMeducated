@@ -4,11 +4,11 @@ export const CanvasAnim = () => {
   let reqAniFra;
 
   const circle = {
-    x: 16,
-    y: 16,
-    vx: 5,
-    vy: 20,
-    radius: 16,
+    x: 64,
+    y: 64,
+    vx: 3.8,
+    vy: 2.5,
+    radius: 64,
     color: "gold",
     draw() {
       ctx.beginPath();
@@ -25,7 +25,7 @@ export const CanvasAnim = () => {
     circle.x += circle.vx;
     circle.y += circle.vy;
     circle.vy *= 0.999;
-    circle.vy += 0.555;
+    circle.vy += 0.666;
     if (circle.y + circle.vy > canvas.height || circle.y + circle.vy < 0) {
       circle.vy = -circle.vy;
     }
