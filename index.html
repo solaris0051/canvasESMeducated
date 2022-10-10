@@ -8,7 +8,7 @@
 	<meta name="description" content="Adopting-ESM-with-2D-contexts-put-on-a-canvas." />
 	<title>canvasESMeducated</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico" />
-	<link rel="preload" as="style" href="style.css">
+	<link rel="preload" as="style" href="style.css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<script type="module" src="app.js"></script>
 </head>
@@ -17,21 +17,43 @@
 	<div class="wrapper">
 		<header>
 			<nav>
-				<ul>
-					<li><button class="square"><span>Click</span> You'll see squares diagonally running down.</button></li>
-					<li><button class="circle"><span>Click</span> Challenge1: Try counting the numbers of circles.</button></li>
-					<li><button class="triangle"><span>Click</span> Challenge2: Do the same to triangles.</button></li>
-					<li><button class="action">A circle shows up when you <span>click</span> here. One more <span>click</span> ON THE CANVAS (No, no, not here. I said ON THE CANVAS, okay?.) makes it start moving. Repeat <span>clicking</span> if you'd want more speed.</button></li>
-					<li><button class="clear"><span>Click</span> here to clear the canvas. At the moment, the circle vanishes into...</button></li>
-				</ul>
+				<ol>
+					<li>
+						<button class="square">
+							<span>Click</span> You'll see squares diagonally running down.
+						</button>
+					</li>
+					<li>
+						<button class="circle">
+							<span>Click</span> Challenge1: Try counting all circles.
+						</button>
+					</li>
+					<li>
+						<button class="triangle">
+							<span>Click</span> Challenge2: Do the same to triangles.
+						</button>
+					</li>
+					<li>
+						<button class="action">
+							A circle shows up when you <span>click</span> here. One more
+							<span>click</span> ON THE CANVAS (No, no, not here. I said ON
+							THE CANVAS, okay?.) makes it start moving. Repeat
+							<span>clicking</span> if you'd want more speed.
+						</button>
+					</li>
+					<li>
+						<button class="clear">
+							<span>Click</span> here to clear the canvas. At the moment, the
+							circle vanishes into...
+						</button>
+					</li>
+				</ol>
 			</nav>
 		</header>
 		<main>
 			<canvas id="canvas"></canvas>
 		</main>
-		<footer>
-			Since Jan, 2022 (C) Y.K
-		</footer>
+		<footer>Since Jan, 2022 (C) Y.K</footer>
 	</div>
 </body>
 

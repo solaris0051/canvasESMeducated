@@ -6,8 +6,8 @@ export const CanvasAnim = () => {
   const circle = {
     x: 64,
     y: 64,
-    vx: 3.8,
-    vy: 2.5,
+    vx: 2.5,
+    vy: 3.8,
     radius: 64,
     color: "gold",
     draw() {
@@ -24,13 +24,13 @@ export const CanvasAnim = () => {
     circle.draw();
     circle.x += circle.vx;
     circle.y += circle.vy;
-    circle.vy *= 0.999;
-    circle.vy += 0.666;
-    if (circle.y + circle.vy > canvas.height || circle.y + circle.vy < 0) {
-      circle.vy = -circle.vy;
-    }
-    if (circle.x + circle.vx > canvas.width || circle.x + circle.vx < 0) {
+    circle.vx *= 0.999;
+    circle.vx += 0.666;
+    if (circle.x + circle.vx > canvas.height || circle.x + circle.vx < 0) {
       circle.vx = -circle.vx;
+    }
+    if (circle.y + circle.vy > canvas.width || circle.y + circle.vy < 0) {
+      circle.vy = -circle.vy;
     }
     reqAniFra = window.requestAnimationFrame(draw);
   }
