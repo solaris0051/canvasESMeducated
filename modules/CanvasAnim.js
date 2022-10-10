@@ -9,14 +9,24 @@ export const CanvasAnim = () => {
     vx: 2.5,
     vy: 3.8,
     radius: 64,
-    color: "gold",
+    color: "#FF0000",
     draw() {
+      const grad = ctx.createRadialGradient(
+        this.x,
+        this.y * 0.8,
+        this.radius * 0.08,
+        this.x,
+        this.y,
+        this.radius
+      );
+      grad.addColorStop(0, "white");
+      grad.addColorStop(1, this.color);
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
       ctx.closePath();
-      ctx.fillStyle = this.color;
+      ctx.fillStyle = grad;
       ctx.fill();
-    }
+    },
   };
 
   function draw() {
@@ -35,9 +45,9 @@ export const CanvasAnim = () => {
     reqAniFra = window.requestAnimationFrame(draw);
   }
 
-  canvas.addEventListener("click", event => {
+  canvas.addEventListener("click", (event) => {
     reqAniFra = window.requestAnimationFrame(draw);
   });
 
   circle.draw();
-}
+};

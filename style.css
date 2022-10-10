@@ -24,11 +24,18 @@ button {
   color: #fffff0;
 }
 
-header,
+header {
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #0000cd;
+  color: #fffff0;
+}
+
 footer {
   flex-grow: 0;
   flex-shrink: 0;
   background-color: #0000cd;
+  text-align: center;
   color: #fffff0;
 }
 
