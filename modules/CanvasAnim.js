@@ -13,7 +13,7 @@ export const CanvasAnim = () => {
     draw() {
       const grad = ctx.createRadialGradient(
         this.x,
-        this.y * 0.8,
+        this.y,
         this.radius * 0.08,
         this.x,
         this.y,
