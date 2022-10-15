@@ -38,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/solaris0051/canvasESMeducated/issues"
   },
-  "homepage": "https://github.com/solaris0051/canvasESMeducated#readme"
+  "homepage": "https://github.com/solaris0051/canvasESMeducated#readme",
+  "dependencies": {
+    "fscreen": "^1.2.0"
+  }
 }

@@ -1,7 +1,20 @@
 // static import
 import colors from "./modules/defColors.js"; //object of color palette
 import { Canvas } from "./modules/canvas.js"; //Class of canvas
+import fscreen from "fscreen";
 
+if (fscreen.fullscreenEnabled) {
+  fscreen.addEventListener("fullscreenchange", handler, false);
+  fscreen.requestFullscreen(html);
+}
+
+function handler() {
+  if (fscreen.fullscreenElement !== null) {
+    console.log("Entered fullscreen mode");
+  } else {
+    console.log("Exited fullscreen mode");
+  }
+}
 const squareBtn = document.querySelector(".square");
 const circleBtn = document.querySelector(".circle");
 const triangleBtn = document.querySelector(".triangle");
