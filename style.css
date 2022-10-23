@@ -1,7 +1,7 @@
 html,
 body {
   box-sizing: border-box;
-  min-height: 100vh;
+  height: 100%;
   padding: 0;
   margin: 0;
   background-color: #b3e820;
@@ -9,19 +9,9 @@ body {
 
 .wrapper {
   box-sizing: border-box;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-span {
-  color: #b3e820;
-}
-
-button {
-  text-align: left;
-  border-color: #b3e820;
-  background-color: #0000cd;
-  color: #fffff0;
 }
 
 header {
@@ -31,23 +21,40 @@ header {
   color: #fffff0;
 }
 
-footer {
-  flex-grow: 0;
-  flex-shrink: 0;
+button {
+  text-align: left;
+  border-color: #b3e820;
   background-color: #0000cd;
-  text-align: center;
   color: #fffff0;
+}
+
+#attention {
+  color: #e9967a;
+}
+
+span {
+  color: #b3e820;
+}
+
+main {
+  padding: 0;
+  margin: auto;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #canvas {
   box-sizing: border-box;
   width: 100%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
   background-color: #fffff0;
 }
 
-main {
+footer {
   flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #0000cd;
+  text-align: center;
+  color: #fffff0;
 }
