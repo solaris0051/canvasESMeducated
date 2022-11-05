@@ -1,7 +1,6 @@
 {
   "name": "canvasesmeducated",
   "version": "1.0.0",
-  "description": "[![CodeQL](https://github.com/solaris0051/canvasESMeducated/actions/workflows/codeql.yml/badge.svg)](https://github.com/solaris0051/canvasESMeducated/actions/workflows/codeql.yml)\r [![CodeFactor](https://www.codefactor.io/repository/github/solaris0051/canvasesmeducated/badge)](https://www.codefactor.io/repository/github/solaris0051/canvasesmeducated)",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
