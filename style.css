@@ -8,12 +8,15 @@ body {
 }
 
 .wrapper {
+  box-sizing: border-box;
   min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
+  flex-grow: 0;
+  flex-shrink: 0;
   background-color: #0000cd;
   color: #fffff0;
 }
@@ -30,6 +33,7 @@ span {
 }
 
 main {
+  flex-grow: 1;
   height: 500px;
   width: 500px;
 }
@@ -52,6 +56,8 @@ canvas {
 }
 
 footer {
+  flex-grow: 0;
+  flex-shrink: 0;
   background-color: #0000cd;
   text-align: center;
   color: #fffff0;

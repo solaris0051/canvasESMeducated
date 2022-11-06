@@ -12,10 +12,10 @@ const btn = [
 ];
 
 // creating canvases.
-const Canv0 = new SubCanvas(500, 500);
+const Canv0 = new SubCanvas(360, 360);
 Canv0.create();
 
-const Canv1 = new Canvas(500, 500);
+const Canv1 = new Canvas(360, 360);
 Canv1.create();
 
 // dynamic import(drawing squares on the canvas)
