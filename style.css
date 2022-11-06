@@ -8,14 +8,12 @@ body {
 }
 
 .wrapper {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 header {
-  flex-grow: 0;
-  flex-shrink: 0;
   background-color: #0000cd;
   color: #fffff0;
 }
@@ -36,38 +34,28 @@ span {
 }
 
 main {
-  padding: 0;
-  margin: 0;
-  height: 500;
-  width: 500;
-  position: relative;
-  flex-grow: 0;
-  display: flex;
-  flex-direction: column;
+  height: 500px;
+  width: 500px;
 }
+
 canvas {
   position: absolute;
+  left: 50%;
+  right: -50%;
+  transform: translate(-50%, 0%);
 }
 
 #canvas0 {
   z-index: 1;
-  margin: auto;
-  box-sizing: border-box;
-  width: 100%;
-  background-color: #fffff0;
+  background-color: ivory;
 }
 
 #canvas1 {
   z-index: 2;
-  margin: auto;
-  box-sizing: border-box;
-  width: 100%;
   background-color: transparent;
 }
 
 footer {
-  flex-grow: 0;
-  flex-shrink: 0;
   background-color: #0000cd;
   text-align: center;
   color: #fffff0;
