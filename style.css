@@ -9,7 +9,6 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -38,17 +37,32 @@ span {
 
 main {
   padding: 0;
-  margin: auto;
+  margin: 0;
+  height: 500;
+  width: 500;
+  position: relative;
   flex-grow: 0;
   display: flex;
   flex-direction: column;
 }
+canvas {
+  position: absolute;
+}
 
-#canvas {
+#canvas0 {
+  z-index: 1;
+  margin: auto;
   box-sizing: border-box;
   width: 100%;
-  margin: auto;
   background-color: #fffff0;
+}
+
+#canvas1 {
+  z-index: 2;
+  margin: auto;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
 }
 
 footer {

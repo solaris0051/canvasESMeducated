@@ -1,14 +1,15 @@
 export const CanvasAnim = () => {
-  const canvas = document.getElementById("canvas");
+  const canvas = document.getElementById("canvas1");
   const ctx = canvas.getContext("2d");
-  let reqAniFra;
+
+  let reqA;
 
   const circle = {
-    x: 64,
-    y: 64,
-    vx: 2.5,
-    vy: 3.8,
-    radius: 64,
+    x: 48,
+    y: 48,
+    vx: 2.4,
+    vy: 7.6,
+    radius: 48,
     color: "#FF0000",
     draw() {
       const grad = ctx.createRadialGradient(
@@ -34,19 +35,23 @@ export const CanvasAnim = () => {
     circle.draw();
     circle.x += circle.vx;
     circle.y += circle.vy;
-    circle.vx *= 0.999;
-    circle.vx += 0.666;
+    circle.vx *= 0.9995;
+    circle.vx += 0.66;
     if (circle.x + circle.vx > canvas.height || circle.x + circle.vx < 0) {
       circle.vx = -circle.vx;
     }
     if (circle.y + circle.vy > canvas.width || circle.y + circle.vy < 0) {
       circle.vy = -circle.vy;
     }
-    reqAniFra = window.requestAnimationFrame(draw);
+    reqA = window.requestAnimationFrame(draw);
   }
 
   canvas.addEventListener("click", (event) => {
-    reqAniFra = window.requestAnimationFrame(draw);
+    reqA = window.requestAnimationFrame(draw);
+  });
+
+  canvas.addEventListener("mouseout", (event) => {
+    window.cancelAnimationFrame(reqA);
   });
 
   circle.draw();
