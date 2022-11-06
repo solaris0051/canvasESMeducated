@@ -6,6 +6,8 @@ const btn = [
   document.querySelector(".circle"),
   document.querySelector(".triangle"),
   document.querySelector(".action"),
+  document.querySelector(".clear_canvas0"),
+  document.querySelector(".clear_canvas1"),
   document.querySelector(".relo"),
 ];
 
@@ -93,7 +95,6 @@ btn[1].addEventListener(
           Math.floor(Canv1.width / 1.185),
           colors.green
         ),
-
         new Module.Circle(
           Canv1.ctx,
           Math.floor(Canv1.width / 9.142),
@@ -107,6 +108,41 @@ btn[1].addEventListener(
           Math.floor(Canv1.width / 4),
           Math.floor(Canv1.width / 1.066),
           colors.green
+        ),
+        new Module.Circle(
+          Canv1.ctx,
+          Math.floor(Canv1.width / 4),
+          Math.floor(Canv1.width / 1.33),
+          Math.floor(Canv1.width / 1.333),
+          colors.red
+        ),
+        new Module.Circle(
+          Canv1.ctx,
+          Math.floor(Canv1.width / 4.923),
+          Math.floor(Canv1.width / 1.33),
+          Math.floor(Canv1.width / 1.254),
+          colors.purple
+        ),
+        new Module.Circle(
+          Canv1.ctx,
+          Math.floor(Canv1.width / 6.4),
+          Math.floor(Canv1.width / 1.33),
+          Math.floor(Canv1.width / 1.185),
+          colors.red
+        ),
+        new Module.Circle(
+          Canv1.ctx,
+          Math.floor(Canv1.width / 9.142),
+          Math.floor(Canv1.width / 1.33),
+          Math.floor(Canv1.width / 1.122),
+          colors.purple
+        ),
+        new Module.Circle(
+          Canv1.ctx,
+          Math.floor(Canv1.width / 16),
+          Math.floor(Canv1.width / 1.33),
+          Math.floor(Canv1.width / 1.066),
+          colors.red
         ),
       ];
       for (let i = 0; i < circle.length; i++) {
@@ -174,7 +210,7 @@ btn[2].addEventListener(
   false
 );
 
-// just another tweak: animation to make a ball bouncing and accelerating.
+// just another tweak: animation to make a ball bouncing, accelerating, and slowing down to stop.
 btn[3].addEventListener(
   "click",
   () => {
@@ -185,5 +221,29 @@ btn[3].addEventListener(
   false
 );
 
+// clear_canvas0
+btn[4].addEventListener(
+  "click",
+  () => {
+    document
+      .getElementById("canvas0")
+      .getContext("2d")
+      .clearRect(0, 0, 500, 500);
+  },
+  false
+);
+
+// clear_canvas1
+btn[5].addEventListener(
+  "click",
+  () => {
+    document
+      .getElementById("canvas1")
+      .getContext("2d")
+      .clearRect(0, 0, 500, 500);
+  },
+  false
+);
+
 //reloading
-btn[4].addEventListener("click", () => location.reload(), false);
+btn[6].addEventListener("click", () => location.reload(), false);
