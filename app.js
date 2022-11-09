@@ -244,17 +244,6 @@ btn[5].addEventListener(
   },
   false
 );
-// control fullscreen(enter/exit)
-const changeBtn = document.getElementById("changeBtn");
-changeBtn.addEventListener("click", () => {
-  if (!document.fullscreenElement) {
-    document.documentElement.requestFullscreen();
-  } else {
-    if (document.exitFullscreen) {
-      document.exitFullscreen();
-    }
-  }
-});
 
 //reloading
 btn[6].addEventListener("click", () => location.reload(), false);
