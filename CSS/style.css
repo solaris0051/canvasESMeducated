@@ -34,18 +34,13 @@ span {
 
 main {
   flex-grow: 1;
-  height: 360px;
-  width: 360px;
-  align-self: center;
-  /* align-items: center; */
-  /* justify-content: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 canvas {
   position: absolute;
-  left: 50%;
-  right: -50%;
-  transform: translate(-50%, 0%);
 }
 
 #canvas0 {
@@ -64,4 +59,5 @@ footer {
   background-color: #0000cd;
   text-align: center;
   color: #fffff0;
+	font-weight: 900;
 }
