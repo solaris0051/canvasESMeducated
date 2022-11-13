@@ -228,7 +228,7 @@ btn[4].addEventListener(
     document
       .getElementById("canvas0")
       .getContext("2d")
-      .clearRect(0, 0, 500, 500);
+      .clearRect(0, 0, 360, 360);
   },
   false
 );
@@ -240,7 +240,7 @@ btn[5].addEventListener(
     document
       .getElementById("canvas1")
       .getContext("2d")
-      .clearRect(0, 0, 500, 500);
+      .clearRect(0, 0, 360, 360);
   },
   false
 );

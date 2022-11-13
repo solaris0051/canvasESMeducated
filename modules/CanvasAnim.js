@@ -7,8 +7,8 @@ export const CanvasAnim = () => {
   const circle = {
     x: 48,
     y: 48,
-    vx: 2.4,
-    vy: 7.6,
+    vx: 3.8,
+    vy: 6.2,
     radius: 48,
     color: "#FF0000",
     draw() {
@@ -35,8 +35,8 @@ export const CanvasAnim = () => {
     circle.draw();
     circle.x += circle.vx;
     circle.y += circle.vy;
-    circle.vx *= 0.9995;
-    circle.vx += 0.66;
+    circle.vx *= 0.9999;
+    circle.vx += 0.33;
     if (circle.x + circle.vx > canvas.height || circle.x + circle.vx < 0) {
       circle.vx = -circle.vx;
     }
