@@ -31,6 +31,12 @@ header {
 }
 
 button {
+  margin: 0.5em;
+  height: auto;
+  width: auto;
+  border-radius: 0.75em;
+	border-width: thin;
+  border-style: dashed;
   border-color: #b3e820;
   background-color: #0000cd;
   color: #fffff0;
@@ -59,7 +65,7 @@ canvas {
   animation-timing-function: linear;
   animation-direction: reverse;
   animation-iteration-count: infinite;
-	background-color: rgba(255, 255, 128, 0.1);
+  background-color: rgba(255, 255, 128, 0.1);
 }
 
 #canvas1 {
