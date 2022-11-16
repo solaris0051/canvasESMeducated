@@ -11,7 +11,7 @@ export const CanvasAnim = () => {
     vy: 1.7,
     radius: 48,
     color: "#FF0000",
-    draw() {
+    drawGrad() {
       const grad = ctx.createRadialGradient(
         this.x,
         this.y,
@@ -32,11 +32,11 @@ export const CanvasAnim = () => {
 
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    circle.draw();
+    circle.drawGrad();
     circle.x += circle.vx;
     circle.y += circle.vy;
     circle.vx *= 0.9999;
-    circle.vx += 0.10;
+    circle.vx += 0.1;
     if (circle.x + circle.vx > canvas.height || circle.x + circle.vx < 0) {
       circle.vx = -circle.vx;
     }
