@@ -53,6 +53,4 @@ export const CanvasAnim = () => {
   canvas.addEventListener("mouseout", (event) => {
     window.cancelAnimationFrame(reqA);
   });
-
-  circle.draw();
 };
