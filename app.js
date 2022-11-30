@@ -12,10 +12,10 @@ const btn = [
 ];
 
 // creating canvases.
-const Canv0 = new Canvas(360, 360);
+const Canv0 = new Canvas(240, 240);
 Canv0.create();
 
-const Canv1 = new SubCanvas(360, 360);
+const Canv1 = new SubCanvas(240, 240);
 Canv1.create();
 
 // dynamic import(drawing squares on the canvas)
@@ -228,7 +228,7 @@ btn[4].addEventListener(
     document
       .getElementById("canvas0")
       .getContext("2d")
-      .clearRect(0, 0, 360, 360);
+      .clearRect(0, 0, 240, 240);
   },
   false
 );
@@ -240,7 +240,7 @@ btn[5].addEventListener(
     document
       .getElementById("canvas1")
       .getContext("2d")
-      .clearRect(0, 0, 360, 360);
+      .clearRect(0, 0, 240, 240);
   },
   false
 );

@@ -28,6 +28,12 @@ header {
   flex-shrink: 0;
   background-color: #0000cd;
   color: #fffff0;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  height: 100%;
 }
 
 button {
@@ -35,12 +41,12 @@ button {
   height: auto;
   width: auto;
   border-radius: 0.75em;
-	border-width: thin;
+  border-width: thin;
   border-style: dashed;
   border-color: #b3e820;
   background-color: #b22202;
   color: #fffff0;
-	text-align: left;
+  text-align: left;
 }
 
 span {
