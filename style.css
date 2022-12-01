@@ -24,20 +24,37 @@ body {
 }
 
 header {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: #0000cd;
-  color: #fffff0;
-
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
   height: 100%;
+  color: #fffff0;
+  background-color: #0000cd;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  min-width: 375px;
+  min-height: 375px;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  position: absolute;
+}
+
+footer {
+  background-color: #0000cd;
+  text-align: center;
+  color: #fffff0;
+  font-weight: 900;
 }
 
 button {
-  margin: 0.5em;
+  margin: 0.2em;
   height: auto;
   width: auto;
   border-radius: 0.75em;
@@ -53,25 +70,14 @@ span {
   color: #b3e820;
 }
 
-main {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-canvas {
-  position: absolute;
-}
-
 #canvas1 {
   z-index: 1;
   animation-name: spin;
-  animation-duration: 8s;
+  animation-duration: 16s;
   animation-timing-function: linear;
   animation-direction: reverse;
   animation-iteration-count: infinite;
-  background-color: rgba(255, 255, 128, 0.1);
+  background-color: transparent;
 }
 
 #canvas2 {
@@ -81,7 +87,7 @@ canvas {
   animation-timing-function: linear;
   animation-direction: normal;
   animation-iteration-count: infinite;
-  background-color: rgba(255, 255, 128, 0.1);
+  background-color: transparent;
 }
 
 #canvas3 {
@@ -91,14 +97,15 @@ canvas {
   animation-timing-function: linear;
   animation-direction: reverse;
   animation-iteration-count: infinite;
-  background-color: rgba(255, 255, 128, 0.1);
+  background-color: transparent;
 }
 
-footer {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: #0000cd;
-  text-align: center;
-  color: #fffff0;
-  font-weight: 900;
+#canvas4 {
+  z-index: 4;
+  animation-name: spin;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  background-color: rgba(255, 255, 128, 0.1);
 }
