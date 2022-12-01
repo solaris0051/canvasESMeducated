@@ -1,5 +1,5 @@
 export const CanvasAnim = () => {
-  const canvas = document.getElementById("canvas1");
+  const canvas = document.getElementById("canvas3");
   const ctx = canvas.getContext("2d");
 
   let reqA;

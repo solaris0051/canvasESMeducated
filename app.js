@@ -1,22 +1,28 @@
 // static import
 import colors from "./modules/defColors.js"; //object of color palette
-import { Canvas, SubCanvas } from "./modules/canvas.js"; //Class of Canvas and its SubCanvas
+import { Canvas, AltCanvas, SubCanvas } from "./modules/canvas.js"; //Class of Canvas and its SubCanvas
 const btn = [
   document.querySelector(".square"),
   document.querySelector(".circle"),
   document.querySelector(".triangle"),
   document.querySelector(".action"),
-  document.querySelector(".clear_canvas0"),
   document.querySelector(".clear_canvas1"),
+  document.querySelector(".clear_canvas3"),
   document.querySelector(".relo"),
 ];
 
-// creating canvases.
-const Canv0 = new Canvas(240, 240);
-Canv0.create();
+// one edge of square canvas
+const edge_of_canvas = 240;
 
-const Canv1 = new SubCanvas(240, 240);
+// creating canvases.
+const Canv1 = new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`);
 Canv1.create();
+
+const Canv2 = new AltCanvas(`${edge_of_canvas}`, `${edge_of_canvas}`);
+Canv2.create();
+
+const Canv3 = new SubCanvas(`${edge_of_canvas}`, `${edge_of_canvas}`);
+Canv3.create();
 
 // dynamic import(drawing squares on the canvas)
 btn[0].addEventListener(
@@ -25,38 +31,38 @@ btn[0].addEventListener(
     import("./modules/square.js").then((Module) => {
       const square = [
         new Module.Square(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 8),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 8),
           0,
           0,
           colors.purple
         ),
         new Module.Square(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 6.4),
-          Math.floor(Canv0.width / 8),
-          Math.floor(Canv0.width / 8),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 6.4),
+          Math.floor(Canv1.width / 8),
+          Math.floor(Canv1.width / 8),
           colors.yellow
         ),
         new Module.Square(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 5.128),
-          Math.floor(Canv0.width / 3.555),
-          Math.floor(Canv0.width / 3.555),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 5.128),
+          Math.floor(Canv1.width / 3.555),
+          Math.floor(Canv1.width / 3.555),
           colors.purple
         ),
         new Module.Square(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 4.102),
-          Math.floor(Canv0.width / 2.099),
-          Math.floor(Canv0.width / 2.099),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 4.102),
+          Math.floor(Canv1.width / 2.099),
+          Math.floor(Canv1.width / 2.099),
           colors.yellow
         ),
         new Module.Square(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 3.587),
-          Math.floor(Canv0.width / 1.388),
-          Math.floor(Canv0.width / 1.388),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 3.587),
+          Math.floor(Canv1.width / 1.388),
+          Math.floor(Canv1.width / 1.388),
           colors.purple
         ),
       ];
@@ -75,73 +81,73 @@ btn[1].addEventListener(
     import("./modules/circle.js").then((Module) => {
       const circle = [
         new Module.Circle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 4),
-          Math.floor(Canv0.width / 4),
-          Math.floor(Canv0.width / 1.333),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 4),
+          Math.floor(Canv1.width / 4),
+          Math.floor(Canv1.width / 1.333),
           colors.green
         ),
         new Module.Circle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 4.923),
-          Math.floor(Canv0.width / 4),
-          Math.floor(Canv0.width / 1.254),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 4.923),
+          Math.floor(Canv1.width / 4),
+          Math.floor(Canv1.width / 1.254),
           colors.blue
         ),
         new Module.Circle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 6.4),
-          Math.floor(Canv0.width / 4),
-          Math.floor(Canv0.width / 1.185),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 6.4),
+          Math.floor(Canv1.width / 4),
+          Math.floor(Canv1.width / 1.185),
           colors.green
         ),
         new Module.Circle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 9.142),
-          Math.floor(Canv0.width / 4),
-          Math.floor(Canv0.width / 1.122),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 9.142),
+          Math.floor(Canv1.width / 4),
+          Math.floor(Canv1.width / 1.122),
           colors.blue
         ),
         new Module.Circle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 16),
-          Math.floor(Canv0.width / 4),
-          Math.floor(Canv0.width / 1.066),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 16),
+          Math.floor(Canv1.width / 4),
+          Math.floor(Canv1.width / 1.066),
           colors.green
         ),
         new Module.Circle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 4),
-          Math.floor(Canv0.width / 1.33),
-          Math.floor(Canv0.width / 1.333),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 4),
+          Math.floor(Canv1.width / 1.33),
+          Math.floor(Canv1.width / 1.333),
           colors.red
         ),
         new Module.Circle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 4.923),
-          Math.floor(Canv0.width / 1.33),
-          Math.floor(Canv0.width / 1.254),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 4.923),
+          Math.floor(Canv1.width / 1.33),
+          Math.floor(Canv1.width / 1.254),
           colors.purple
         ),
         new Module.Circle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 6.4),
-          Math.floor(Canv0.width / 1.33),
-          Math.floor(Canv0.width / 1.185),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 6.4),
+          Math.floor(Canv1.width / 1.33),
+          Math.floor(Canv1.width / 1.185),
           colors.red
         ),
         new Module.Circle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 9.142),
-          Math.floor(Canv0.width / 1.33),
-          Math.floor(Canv0.width / 1.122),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 9.142),
+          Math.floor(Canv1.width / 1.33),
+          Math.floor(Canv1.width / 1.122),
           colors.purple
         ),
         new Module.Circle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 16),
-          Math.floor(Canv0.width / 1.33),
-          Math.floor(Canv0.width / 1.066),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 16),
+          Math.floor(Canv1.width / 1.33),
+          Math.floor(Canv1.width / 1.066),
           colors.red
         ),
       ];
@@ -160,45 +166,45 @@ btn[2].addEventListener(
     import("./modules/triangle.js").then((Module) => {
       const triangle = [
         new Module.Triangle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 7.079),
-          Math.floor(Canv0.width / 1.164),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 7.079),
+          Math.floor(Canv1.width / 1.164),
           0,
           colors.red
         ),
         new Module.Triangle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 7.079),
-          Math.floor(Canv0.width / 1.393),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 7.079),
+          Math.floor(Canv1.width / 1.393),
           0,
           colors.red
         ),
         new Module.Triangle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 7.079),
-          Math.floor(Canv0.width / 1.735),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 7.079),
+          Math.floor(Canv1.width / 1.735),
           0,
           colors.red
         ),
         new Module.Triangle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 7.079),
-          Math.floor(Canv0.width / 1.268),
-          Math.floor(Canv0.width / 8.107),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 7.079),
+          Math.floor(Canv1.width / 1.268),
+          Math.floor(Canv1.width / 8.107),
           colors.orange
         ),
         new Module.Triangle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 7.079),
-          Math.floor(Canv0.width / 1.545),
-          Math.floor(Canv0.width / 8.107),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 7.079),
+          Math.floor(Canv1.width / 1.545),
+          Math.floor(Canv1.width / 8.107),
           colors.orange
         ),
         new Module.Triangle(
-          Canv0.ctx,
-          Math.floor(Canv0.width / 7.079),
-          Math.floor(Canv0.width / 1.393),
-          Math.floor(Canv0.width / 4.085),
+          Canv1.ctx,
+          Math.floor(Canv1.width / 7.079),
+          Math.floor(Canv1.width / 1.393),
+          Math.floor(Canv1.width / 4.085),
           colors.red
         ),
       ];
@@ -221,26 +227,26 @@ btn[3].addEventListener(
   false
 );
 
-// clear_canvas0
-btn[4].addEventListener(
-  "click",
-  () => {
-    document
-      .getElementById("canvas0")
-      .getContext("2d")
-      .clearRect(0, 0, 240, 240);
-  },
-  false
-);
-
 // clear_canvas1
-btn[5].addEventListener(
+btn[4].addEventListener(
   "click",
   () => {
     document
       .getElementById("canvas1")
       .getContext("2d")
-      .clearRect(0, 0, 240, 240);
+      .clearRect(0, 0, `${edge_of_canvas}`, `${edge_of_canvas}`);
+  },
+  false
+);
+
+// clear_canvas3
+btn[5].addEventListener(
+  "click",
+  () => {
+    document
+      .getElementById("canvas3")
+      .getContext("2d")
+      .clearRect(0, 0, `${edge_of_canvas}`, `${edge_of_canvas}`);
   },
   false
 );

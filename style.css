@@ -64,7 +64,7 @@ canvas {
   position: absolute;
 }
 
-#canvas0 {
+#canvas1 {
   z-index: 1;
   animation-name: spin;
   animation-duration: 8s;
@@ -74,12 +74,22 @@ canvas {
   background-color: rgba(255, 255, 128, 0.1);
 }
 
-#canvas1 {
+#canvas2 {
   z-index: 2;
   animation-name: spin;
   animation-duration: 8s;
   animation-timing-function: linear;
   animation-direction: normal;
+  animation-iteration-count: infinite;
+  background-color: rgba(255, 255, 128, 0.1);
+}
+
+#canvas3 {
+  z-index: 3;
+  animation-name: spin;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-direction: reverse;
   animation-iteration-count: infinite;
   background-color: rgba(255, 255, 128, 0.1);
 }
