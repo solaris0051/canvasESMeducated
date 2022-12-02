@@ -73,7 +73,7 @@ span {
 #canvas1 {
   z-index: 1;
   animation-name: spin;
-  animation-duration: 16s;
+  animation-duration: 10s;
   animation-timing-function: linear;
   animation-direction: reverse;
   animation-iteration-count: infinite;
@@ -83,7 +83,7 @@ span {
 #canvas2 {
   z-index: 2;
   animation-name: spin;
-  animation-duration: 8s;
+  animation-duration: 7.64s;
   animation-timing-function: linear;
   animation-direction: normal;
   animation-iteration-count: infinite;
@@ -93,7 +93,7 @@ span {
 #canvas3 {
   z-index: 3;
   animation-name: spin;
-  animation-duration: 8s;
+  animation-duration: 6.18s;
   animation-timing-function: linear;
   animation-direction: reverse;
   animation-iteration-count: infinite;
@@ -103,7 +103,17 @@ span {
 #canvas4 {
   z-index: 4;
   animation-name: spin;
-  animation-duration: 8s;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+}
+
+#canvas5 {
+  z-index: 5;
+  animation-name: spin;
+  animation-duration: 3.82s;
   animation-timing-function: linear;
   animation-direction: normal;
   animation-iteration-count: infinite;

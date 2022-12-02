@@ -75,5 +75,24 @@ class YetCanvas extends Canvas {
   }
 }
 
+class YetAnotherCanvas extends Canvas {
+  super(width, height) {
+    this.width = width;
+    this.height = height;
+    this.ctx = null;
+  }
+
+  create() {
+    if (this.ctx !== null) {
+      return;
+    } else {
+      const canvasElem = document.getElementById("canvas5");
+      canvasElem.width = this.width;
+      canvasElem.height = this.height;
+      this.ctx = canvasElem.getContext("2d");
+    }
+  }
+}
+
 // exporing.,
-export { Canvas, AltCanvas, SubCanvas, YetCanvas };
+export { Canvas, AltCanvas, SubCanvas, YetCanvas, YetAnotherCanvas };
