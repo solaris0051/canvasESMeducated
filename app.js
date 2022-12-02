@@ -2,13 +2,7 @@
 //object of color palette
 import colors from "./modules/defColors.js";
 //Classes of Canvases
-import {
-  Canvas,
-  AltCanvas,
-  SubCanvas,
-  YetCanvas,
-  YetAnotherCanvas,
-} from "./modules/canvas.js";
+import { Canvas, AltCanvas, SubCanvas, YetCanvas, YetAnotherCanvas } from "./modules/canvas.js";
 const btn = [
   document.querySelector(".square"),
   document.querySelector(".circle"),
@@ -266,7 +260,7 @@ btn[5].addEventListener(
   "click",
   () => {
     document
-      .getElementById("canvas5)
+      .getElementById("canvas5")
       .getContext("2d")
       .clearRect(0, 0, `${edge_of_canvas}`, `${edge_of_canvas}`);
   },
