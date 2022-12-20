@@ -21,7 +21,7 @@ const btn = [
 ];
 
 // length of an edge of a canvas
-const edge_of_canvas = 300;
+const edge_of_canvas = 256;
 
 // creat canvases
 const canv = [
