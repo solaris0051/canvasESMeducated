@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.20.5",
+    "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.7.3",
@@ -39,6 +39,6 @@
   },
   "homepage": "https://github.com/solaris0051/canvasESMeducated#readme",
   "dependencies": {
-    "npm-check-updates": "^16.6.0"
+    "npm-check-updates": "^16.6.2"
   }
 }
