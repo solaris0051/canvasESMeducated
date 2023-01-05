@@ -23,7 +23,7 @@ const btn = [
 // length of an edge of a canvas
 const edge_of_canvas = 256;
 
-// creat canvases
+// create canvases
 const canv = [
   new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`),
   new AltCanvas(`${edge_of_canvas}`, `${edge_of_canvas}`),
