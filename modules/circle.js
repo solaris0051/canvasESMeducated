@@ -28,5 +28,5 @@ class Circle {
     this.ctx.fill();
   }
 }
-// exporing.
+// exporting.
 export { Circle };

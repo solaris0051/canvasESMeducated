@@ -7,5 +7,5 @@ const colors = {
   red: "#FF0000",
   orange: "#FFA500",
 };
-// exporing.
+// exporting.
 export default colors;

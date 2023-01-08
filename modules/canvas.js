@@ -94,5 +94,5 @@ class YetAnotherCanvas extends Canvas {
   }
 }
 
-// exporing.,
+// exporting.,
 export { Canvas, AltCanvas, SubCanvas, YetCanvas, YetAnotherCanvas };

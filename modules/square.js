@@ -14,5 +14,5 @@ class Square {
     this.ctx.fillRect(this.x, this.y, this.length, this.length);
   }
 }
-// exporing.
+// exporting.
 export { Square };

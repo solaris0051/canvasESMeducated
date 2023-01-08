@@ -1,4 +1,4 @@
-// preparing for drawing a triangle.
+// preparing for drawing a trianle.
 
 function degToRad(degrees) {
   return (degrees * Math.PI) / 180;
