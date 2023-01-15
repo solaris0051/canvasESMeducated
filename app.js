@@ -23,6 +23,9 @@ const btn = [
 // length of an edge of a canvas
 const edge_of_canvas = 256;
 
+// storing ID of canvases
+const canvasID = ["canvas1", "canvas2", "canvas3", "canvas4", "canvas5",]
+
 // create canvases
 const canv = [
   new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`),
@@ -244,22 +247,12 @@ btn[3].addEventListener(
 btn[4].addEventListener(
   "click",
   () => {
-    document
-      .getElementById("canvas1")
-      .getContext("2d")
-      .clearRect(0, 0, `${edge_of_canvas}`, `${edge_of_canvas}`);
-    document
-      .getElementById("canvas2")
-      .getContext("2d")
-      .clearRect(0, 0, `${edge_of_canvas}`, `${edge_of_canvas}`);
-    document
-      .getElementById("canvas3")
-      .getContext("2d")
-      .clearRect(0, 0, `${edge_of_canvas}`, `${edge_of_canvas}`);
-    document
-      .getElementById("canvas4")
-      .getContext("2d")
-      .clearRect(0, 0, `${edge_of_canvas}`, `${edge_of_canvas}`);
+    for (let i = 0; i < canvasID.length - 1; i++) {
+      document
+        .getElementById(canvasID[i])
+        .getContext("2d")
+        .clearRect(0, 0, `${edge_of_canvas}`, `${edge_of_canvas}`);
+    }
   },
   false
 );
@@ -269,7 +262,7 @@ btn[5].addEventListener(
   "click",
   () => {
     document
-      .getElementById("canvas5")
+      .getElementById(canvasID[4])
       .getContext("2d")
       .clearRect(0, 0, `${edge_of_canvas}`, `${edge_of_canvas}`);
   },
@@ -280,11 +273,9 @@ btn[5].addEventListener(
 btn[6].addEventListener(
   "click",
   () => {
-    document.getElementById("canvas1").classList.toggle("canvas");
-    document.getElementById("canvas2").classList.toggle("canvas");
-    document.getElementById("canvas3").classList.toggle("canvas");
-    document.getElementById("canvas4").classList.toggle("canvas");
-    document.getElementById("canvas5").classList.toggle("canvas");
+    for (let i = 0; i < canvasID.length; i++) {
+      document.getElementById(canvasID[i]).classList.toggle("canvas");
+    }
   },
   false
 );

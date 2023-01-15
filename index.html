@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self';script-src 'self';font-src 'self';style-src 'self';object-src 'none'"
-    />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta
-      name="description"
-      content="Adopting-ESM-with-2D-contexts-put-on-a-canvas."
-    />
-    <title>canvasESMeducated</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="preload" as="style" href="style.css" />
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-    <script type="module" src="app.js"></script>
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <header>
-        <button class="square" type="button">
-          <span>Click</span> 黄と紫の正方形によるネクタイの抽象
-        </button>
-        <button class="circle" type="button">
-          <span>Click</span> Challenge1: 円をいくつ見つけられましたか。
-        </button>
-        <button class="triangle" type="button">
-          <span>Click</span> Challenge2: 正三角形をいくつ見つけられましたか。
-        </button>
-        <button class="clear_canvas1_4" type="button">
-          こちらを <span>Click</span> すると図形がすべて消えます。
-        </button>
-        <button class="action" type="button">
-          こちら <span>Click</span> で赤色ボールが出現<br />
-          CANVAS <span>Click</span> でボールが跳躍<br />
-          繰り返し <span>Click</span> でボールはスピードアップ<br />
-          <span>Click</span> した回数分、CANVASから
-          <span>Mouse out</span> するとボールは停止<br />
-          それでは <span>Click</span> &
-          <span>Mouse-out</span> をお試しください。
-        </button>
-        <button class="clear_canvas5" type="button">
-          ボールが停止状態であれば、こちらを
-          <span>Click</span> でボールが消えます。
-        </button>
-        <button class="splitter" type="button">
-          こちら
-          <span>Click</span>
-          でそれぞれの図形とボールを横方向に展開して表示<br />
-          もう一度
-          <span>Click</span>
-          でそれぞれの図形とボールを画面の中央にそろえて表示
-        </button>
-        <button class="relo" type="button">
-          リロードはこちらを <span>Click</span>
-        </button>
-      </header>
-      <main>
-        <canvas class="canvas" id="canvas1"></canvas>
-        <canvas class="canvas" id="canvas2"></canvas>
-        <canvas class="canvas" id="canvas3"></canvas>
-        <canvas class="canvas" id="canvas4"></canvas>
-        <canvas class="canvas" id="canvas5"></canvas>
-      </main>
-      <footer>
-        This product is dedicated to Ms. Sicily and Mr. Su. Since Jan, 2022 (C)
-        Y.K
-      </footer>
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self';script-src 'self';font-src 'self';style-src 'self';object-src 'none'" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Adopting-ESM-with-2D-contexts-put-on-a-canvas." />
+  <title>canvasESMeducated</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preload" as="style" href="style.css" />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <script type="module" src="app.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <button class="square" type="button">
+        <span>Click</span> Challenge0: 黄と紫の正方形による<u>ネ〇〇イ</u>の抽象
+      </button>
+      <button class="circle" type="button">
+        <span>Click</span> Challenge1: 円をいくつ見つけられましたか。
+      </button>
+      <button class="triangle" type="button">
+        <span>Click</span> Challenge2: 正三角形をいくつ見つけられましたか。
+      </button>
+      <button class="clear_canvas1_4" type="button">
+        こちらを <span>Click</span> すると図形がすべて消えます。
+      </button>
+      <button class="action" type="button">
+        こちら <span>Click</span> で赤色ボールが出現<br />
+        CANVAS <span>Click</span> でボールが跳躍<br />
+        繰り返し <span>Click</span> でボールはスピードアップ<br />
+        <span>Click</span> した回数分、CANVASから
+        <span>Mouse out</span> するとボールは停止<br />
+        それでは <span>Click</span> &
+        <span>Mouse-out</span> をお試しください。
+      </button>
+      <button class="clear_canvas5" type="button">
+        ボールが停止状態であれば、こちらを
+        <span>Click</span> でボールが消えます。
+      </button>
+      <button class="splitter" type="button">
+        こちら
+        <span>Click</span>
+        でそれぞれの図形とボールを横方向に展開して表示<br />
+        もう一度
+        <span>Click</span>
+        でそれぞれの図形とボールを画面の中央にそろえて表示
+      </button>
+      <button class="relo" type="button">
+        リロードはこちらを <span>Click</span>
+      </button>
+    </header>
+    <main>
+      <canvas class="canvas" id="canvas1"></canvas>
+      <canvas class="canvas" id="canvas2"></canvas>
+      <canvas class="canvas" id="canvas3"></canvas>
+      <canvas class="canvas" id="canvas4"></canvas>
+      <canvas class="canvas" id="canvas5"></canvas>
+    </main>
+    <footer>
+      This product is dedicated to Ms. Sicily and Mr. Su. Since Jan, 2022 (C)
+      Y.K
+    </footer>
+  </div>
+</body>
+
 </html>
