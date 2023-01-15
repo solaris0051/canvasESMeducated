@@ -4,10 +4,10 @@ import colors from "./modules/defColors.js";
 //Classes of Canvases
 import {
   Canvas,
-  AltCanvas,
-  SubCanvas,
-  YetCanvas,
-  YetAnotherCanvas,
+  // AltCanvas,
+  // SubCanvas,
+  // YetCanvas,
+  // YetAnotherCanvas,
 } from "./modules/canvas.js";
 const btn = [
   document.querySelector(".square"),
@@ -28,12 +28,13 @@ const canvasID = ["canvas1", "canvas2", "canvas3", "canvas4", "canvas5",]
 
 // create canvases
 const canv = [
-  new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`),
-  new AltCanvas(`${edge_of_canvas}`, `${edge_of_canvas}`),
-  new SubCanvas(`${edge_of_canvas}`, `${edge_of_canvas}`),
-  new YetCanvas(`${edge_of_canvas}`, `${edge_of_canvas}`),
-  new YetAnotherCanvas(`${edge_of_canvas}`, `${edge_of_canvas}`),
+  new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`, canvasID[0]),
+  new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`, canvasID[1]),
+  new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`, canvasID[2]),
+  new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`, canvasID[3]),
+  new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`, canvasID[4]),
 ];
+
 for (let i = 0; i < canv.length; i++) {
   canv[i].create();
 }
