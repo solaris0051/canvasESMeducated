@@ -2,13 +2,7 @@
 //object of color palette
 import colors from "./modules/defColors.js";
 //Classes of Canvases
-import {
-  Canvas,
-  // AltCanvas,
-  // SubCanvas,
-  // YetCanvas,
-  // YetAnotherCanvas,
-} from "./modules/canvas.js";
+import { Canvas } from "./modules/canvas.js";
 const btn = [
   document.querySelector(".square"),
   document.querySelector(".circle"),
