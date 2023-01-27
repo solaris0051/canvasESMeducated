@@ -2,6 +2,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
@@ -25,8 +26,8 @@ body {
 
 header {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 5px;
   height: 100%;
   color: #fffff0;
@@ -34,8 +35,8 @@ header {
 }
 
 main {
-  flex-grow: 1;
   display: flex;
+  flex-grow: 1;
   min-width: 375px;
   min-height: 375px;
   justify-content: center;
@@ -50,7 +51,6 @@ footer {
   background-color: #0000cd;
   text-align: center;
   color: #fffff0;
-  font-weight: 900;
 }
 
 button {
@@ -66,8 +66,12 @@ button {
   text-align: left;
 }
 
-span {
+span.click {
   color: #b3e820;
+}
+
+span.underline {
+  text-decoration: underline;
 }
 
 #canvas1 {
