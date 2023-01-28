@@ -18,10 +18,9 @@ body {
 }
 
 .wrapper {
-  box-sizing: border-box;
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -35,16 +34,9 @@ header {
 }
 
 main {
-  display: flex;
-  flex-grow: 1;
-  min-width: 375px;
-  min-height: 375px;
-  justify-content: center;
-  align-items: center;
-}
-
-.canvas {
-  position: absolute;
+  display: grid;
+  grid-template-rows: 55px 1fr 55px;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 footer {
@@ -74,8 +66,10 @@ span.underline {
   text-decoration: underline;
 }
 
-#canvas1 {
+.canvas1 {
   z-index: 1;
+  grid-column-start: 3;
+  grid-row-start: 2;
   animation-name: spin;
   animation-duration: 10s;
   animation-timing-function: linear;
@@ -84,8 +78,10 @@ span.underline {
   background-color: transparent;
 }
 
-#canvas2 {
+.canvas2 {
   z-index: 2;
+  grid-column-start: 3;
+  grid-row-start: 2;
   animation-name: spin;
   animation-duration: 7.64s;
   animation-timing-function: linear;
@@ -94,8 +90,10 @@ span.underline {
   background-color: transparent;
 }
 
-#canvas3 {
+.canvas3 {
   z-index: 3;
+  grid-column-start: 3;
+  grid-row-start: 2;
   animation-name: spin;
   animation-duration: 6.18s;
   animation-timing-function: linear;
@@ -104,8 +102,10 @@ span.underline {
   background-color: transparent;
 }
 
-#canvas4 {
+.canvas4 {
   z-index: 4;
+  grid-column-start: 3;
+  grid-row-start: 2;
   animation-name: spin;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -114,12 +114,23 @@ span.underline {
   background-color: transparent;
 }
 
-#canvas5 {
+.canvas5 {
   z-index: 5;
+  grid-column-start: 3;
+  grid-row-start: 2;
   animation-name: spin;
   animation-duration: 3.82s;
   animation-timing-function: linear;
-  animation-direction: normal;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  background-color: rgba(255, 255, 128, 0.1);
+}
+
+.canvas_speeder {
+  animation-name: spin;
+  animation-duration: 900ms;
+  animation-timing-function: linear;
+  animation-direction: reverse;
   animation-iteration-count: infinite;
   background-color: rgba(255, 255, 128, 0.1);
 }

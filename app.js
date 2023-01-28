@@ -269,7 +269,8 @@ btn[6].addEventListener(
   "click",
   () => {
     for (let i = 0; i < canvasID.length; i++) {
-      document.getElementById(canvasID[i]).classList.toggle("canvas");
+      // document.getElementById(canvasID[i]).classList.toggle("canvas");
+      document.getElementById(canvasID[i]).classList.toggle("canvas_speeder");
     }
   },
   false
