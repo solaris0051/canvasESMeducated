@@ -1,6 +1,6 @@
 // static import
 //object of color palette
-import colors from "./modules/defColors.js";
+import COLORS from "./modules/COLORS.js";
 //Classes of Canvases
 import { Canvas } from "./modules/canvas.js";
 const btn = [
@@ -8,9 +8,10 @@ const btn = [
   document.querySelector(".circle"),
   document.querySelector(".triangle"),
   document.querySelector(".action"),
+  document.querySelector(".splitter"),
+  document.querySelector(".canvas_speeder"),
   document.querySelector(".clear_canvas1_4"),
   document.querySelector(".clear_canvas5"),
-  document.querySelector(".splitter"),
   document.querySelector(".relo"),
 ];
 
@@ -44,35 +45,35 @@ btn[0].addEventListener(
           Math.floor(canv[0].width / 8),
           0,
           0,
-          colors.purple
+          COLORS.purple
         ),
         new Module.Square(
           canv[0].ctx,
           Math.floor(canv[0].width / 6.4),
           Math.floor(canv[0].width / 8),
           Math.floor(canv[0].width / 8),
-          colors.yellow
+          COLORS.yellow
         ),
         new Module.Square(
           canv[0].ctx,
           Math.floor(canv[0].width / 5.128),
           Math.floor(canv[0].width / 3.555),
           Math.floor(canv[0].width / 3.555),
-          colors.purple
+          COLORS.purple
         ),
         new Module.Square(
           canv[0].ctx,
           Math.floor(canv[0].width / 4.102),
           Math.floor(canv[0].width / 2.099),
           Math.floor(canv[0].width / 2.099),
-          colors.yellow
+          COLORS.yellow
         ),
         new Module.Square(
           canv[0].ctx,
           Math.floor(canv[0].width / 3.587),
           Math.floor(canv[0].width / 1.388),
           Math.floor(canv[0].width / 1.388),
-          colors.purple
+          COLORS.purple
         ),
       ];
       for (let i = 0; i < square.length; i++) {
@@ -95,35 +96,35 @@ btn[1].addEventListener(
           Math.floor(canv[1].width / 4),
           Math.floor(canv[1].width / 2),
           Math.floor(canv[1].width / 1.333),
-          colors.green
+          COLORS.green
         ),
         new Module.Circle(
           canv[1].ctx,
           Math.floor(canv[1].width / 4.923),
           Math.floor(canv[1].width / 2),
           Math.floor(canv[1].width / 1.254),
-          colors.blue
+          COLORS.blue
         ),
         new Module.Circle(
           canv[1].ctx,
           Math.floor(canv[1].width / 6.4),
           Math.floor(canv[1].width / 2),
           Math.floor(canv[1].width / 1.185),
-          colors.green
+          COLORS.green
         ),
         new Module.Circle(
           canv[1].ctx,
           Math.floor(canv[1].width / 9.142),
           Math.floor(canv[1].width / 2),
           Math.floor(canv[1].width / 1.122),
-          colors.blue
+          COLORS.blue
         ),
         new Module.Circle(
           canv[1].ctx,
           Math.floor(canv[1].width / 16),
           Math.floor(canv[1].width / 2),
           Math.floor(canv[1].width / 1.066),
-          colors.green
+          COLORS.green
         ),
         //redPurple
         new Module.Circle(
@@ -131,35 +132,35 @@ btn[1].addEventListener(
           Math.floor(canv[2].width / 4),
           Math.floor(canv[2].width / 1.33),
           Math.floor(canv[2].width / 1.333),
-          colors.red
+          COLORS.red
         ),
         new Module.Circle(
           canv[2].ctx,
           Math.floor(canv[2].width / 4.923),
           Math.floor(canv[2].width / 1.33),
           Math.floor(canv[2].width / 1.254),
-          colors.purple
+          COLORS.purple
         ),
         new Module.Circle(
           canv[2].ctx,
           Math.floor(canv[2].width / 6.4),
           Math.floor(canv[2].width / 1.33),
           Math.floor(canv[2].width / 1.185),
-          colors.red
+          COLORS.red
         ),
         new Module.Circle(
           canv[2].ctx,
           Math.floor(canv[2].width / 9.142),
           Math.floor(canv[2].width / 1.33),
           Math.floor(canv[2].width / 1.122),
-          colors.purple
+          COLORS.purple
         ),
         new Module.Circle(
           canv[2].ctx,
           Math.floor(canv[2].width / 16),
           Math.floor(canv[2].width / 1.33),
           Math.floor(canv[2].width / 1.066),
-          colors.red
+          COLORS.red
         ),
       ];
       for (let i = 0; i < circle.length; i++) {
@@ -181,42 +182,42 @@ btn[2].addEventListener(
           Math.floor(canv[3].width / 7.079),
           Math.floor(canv[3].width / 1.164),
           0,
-          colors.red
+          COLORS.red
         ),
         new Module.Triangle(
           canv[3].ctx,
           Math.floor(canv[3].width / 7.079),
           Math.floor(canv[3].width / 1.393),
           0,
-          colors.red
+          COLORS.red
         ),
         new Module.Triangle(
           canv[3].ctx,
           Math.floor(canv[3].width / 7.079),
           Math.floor(canv[3].width / 1.735),
           0,
-          colors.red
+          COLORS.red
         ),
         new Module.Triangle(
           canv[3].ctx,
           Math.floor(canv[3].width / 7.079),
           Math.floor(canv[3].width / 1.268),
           Math.floor(canv[3].width / 8.107),
-          colors.orange
+          COLORS.orange
         ),
         new Module.Triangle(
           canv[3].ctx,
           Math.floor(canv[3].width / 7.079),
           Math.floor(canv[3].width / 1.545),
           Math.floor(canv[3].width / 8.107),
-          colors.orange
+          COLORS.orange
         ),
         new Module.Triangle(
           canv[3].ctx,
           Math.floor(canv[3].width / 7.079),
           Math.floor(canv[3].width / 1.393),
           Math.floor(canv[3].width / 4.085),
-          colors.red
+          COLORS.red
         ),
       ];
       for (let i = 0; i < triangle.length; i++) {
@@ -238,8 +239,30 @@ btn[3].addEventListener(
   false
 );
 
-// clear_canvas1_4
+// splitting_gathering_canvases
 btn[4].addEventListener(
+  "click",
+  () => {
+    for (let i = 0; i < canvasID.length; i++) {
+      document.getElementById(canvasID[i]).classList.toggle(`canvas0${i + 1}`);
+    }
+  },
+  false
+);
+
+//spinnig_hight_speed
+btn[5].addEventListener(
+  "click",
+  () => {
+    for (let i = 0; i < canvasID.length; i++) {
+      document.getElementById(canvasID[i]).classList.toggle("speeder");
+    }
+  },
+  false
+);
+
+// clear_canvas1_4
+btn[6].addEventListener(
   "click",
   () => {
     for (let i = 0; i < canvasID.length - 1; i++) {
@@ -253,7 +276,7 @@ btn[4].addEventListener(
 );
 
 // clear_canvas5
-btn[5].addEventListener(
+btn[7].addEventListener(
   "click",
   () => {
     document
@@ -264,17 +287,5 @@ btn[5].addEventListener(
   false
 );
 
-// splitting_gathering_canvases
-btn[6].addEventListener(
-  "click",
-  () => {
-    for (let i = 0; i < canvasID.length; i++) {
-      // document.getElementById(canvasID[i]).classList.toggle("canvas");
-      document.getElementById(canvasID[i]).classList.toggle("canvas_speeder");
-    }
-  },
-  false
-);
-
 //reloading
-btn[7].addEventListener("click", () => location.reload(), false);
+btn[8].addEventListener("click", () => location.reload(), false);
