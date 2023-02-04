@@ -1,5 +1,5 @@
 // defining colors.
-const colors = {
+const COLORS = {
   purple: "#800080",
   yellow: "#FFFF00",
   green: "#008000",
@@ -8,4 +8,4 @@ const colors = {
   orange: "#FFA500",
 };
 // exporting.
-export default colors;
+export default COLORS;

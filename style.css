@@ -36,7 +36,7 @@ header {
 main {
   display: grid;
   grid-template-rows: 55px 1fr 55px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 55px repeat(5, 1fr) 55px;
 }
 
 footer {
@@ -68,7 +68,7 @@ span.underline {
 
 .canvas1 {
   z-index: 1;
-  grid-column-start: 3;
+  grid-column-start: 4;
   grid-row-start: 2;
   animation-name: spin;
   animation-duration: 10s;
@@ -80,7 +80,7 @@ span.underline {
 
 .canvas2 {
   z-index: 2;
-  grid-column-start: 3;
+  grid-column-start: 4;
   grid-row-start: 2;
   animation-name: spin;
   animation-duration: 7.64s;
@@ -92,7 +92,7 @@ span.underline {
 
 .canvas3 {
   z-index: 3;
-  grid-column-start: 3;
+  grid-column-start: 4;
   grid-row-start: 2;
   animation-name: spin;
   animation-duration: 6.18s;
@@ -104,7 +104,7 @@ span.underline {
 
 .canvas4 {
   z-index: 4;
-  grid-column-start: 3;
+  grid-column-start: 4;
   grid-row-start: 2;
   animation-name: spin;
   animation-duration: 5s;
@@ -116,7 +116,7 @@ span.underline {
 
 .canvas5 {
   z-index: 5;
-  grid-column-start: 3;
+  grid-column-start: 4;
   grid-row-start: 2;
   animation-name: spin;
   animation-duration: 3.82s;
@@ -126,9 +126,69 @@ span.underline {
   background-color: rgba(255, 255, 128, 0.1);
 }
 
-.canvas_speeder {
+.speeder {
   animation-name: spin;
   animation-duration: 900ms;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  background-color: rgba(255, 255, 128, 0.1);
+}
+
+.canvas01 {
+  z-index: 1;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+}
+
+.canvas02 {
+  z-index: 2;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  animation-name: spin;
+  animation-duration: 7.64s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+}
+
+.canvas03 {
+  z-index: 3;
+  grid-column-start: 4;
+  grid-row-start: 2;
+  animation-name: spin;
+  animation-duration: 6.18s;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+}
+
+.canvas04 {
+  z-index: 4;
+  grid-column-start: 5;
+  grid-row-start: 2;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+}
+
+.canvas05 {
+  z-index: 5;
+  grid-column-start: 6;
+  grid-row-start: 2;
+  animation-name: spin;
+  animation-duration: 3.82s;
   animation-timing-function: linear;
   animation-direction: reverse;
   animation-iteration-count: infinite;
