@@ -20,7 +20,7 @@ body {
 .wrapper {
   min-height: 100%;
   display: grid;
-  grid-template-rows: minmax(55px, max-content) 1fr minmax(55px, max-content);
+  grid-template-rows: minmax(55px, auto) 1fr minmax(55px, auto);
 }
 
 header {
@@ -35,8 +35,8 @@ header {
 
 main {
   display: grid;
-  grid-template-rows: minmax(55px, max-content) 1fr minmax(55px, max-content);
-  grid-template-columns: minmax(55px, max-content) repeat(5, 1fr) minmax(55px, max-content);
+  grid-template-rows: minmax(55px, auto) 1fr minmax(55px, auto);
+  grid-template-columns: minmax(55px, auto) repeat(5, 1fr) minmax(55px, auto);
 }
 
 footer {
@@ -51,15 +51,24 @@ button {
   width: auto;
   border-radius: 0.75em;
   border-width: thin;
-  border-style: dashed;
   border-color: #b3e820;
-  background-color: #b22202;
-  color: #fffff0;
+  background-color: mediumaquamarine;
+  color: #103a89;
   text-align: left;
 }
 
+button:hover {
+  border-style: dashed;
+  background-color: #ec7f63;
+}
+
+p{
+  font-size: 1em;
+  text-align: center;
+}
+
 span.click {
-  color: #b3e820;
+  color: #103a89;
 }
 
 span.underline {
@@ -71,6 +80,7 @@ span.underline {
   position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
+  align-self: center;
   animation-name: spin;
   animation-duration: 10s;
   animation-timing-function: linear;
@@ -84,6 +94,7 @@ span.underline {
   position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
+  align-self: center;
   animation-name: spin;
   animation-duration: 7.64s;
   animation-timing-function: linear;
@@ -97,6 +108,7 @@ span.underline {
   position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
+  align-self: center;
   animation-name: spin;
   animation-duration: 6.18s;
   animation-timing-function: linear;
@@ -110,6 +122,7 @@ span.underline {
   position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
+  align-self: center;
   animation-name: spin;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -123,6 +136,7 @@ span.underline {
   position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
+  align-self: center;
   animation-name: spin;
   animation-duration: 3.82s;
   animation-timing-function: linear;
@@ -136,6 +150,7 @@ span.underline {
   position: relative;
   grid-column-start: 2;
   grid-row-start: 2;
+  align-self: center;
   animation-name: spin;
   animation-duration: 10s;
   animation-timing-function: linear;
@@ -149,6 +164,7 @@ span.underline {
   position: relative;
   grid-column-start: 3;
   grid-row-start: 2;
+  align-self: center;
   animation-name: spin;
   animation-duration: 7.64s;
   animation-timing-function: linear;
@@ -162,6 +178,7 @@ span.underline {
   position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
+  align-self: center;
   animation-name: spin;
   animation-duration: 6.18s;
   animation-timing-function: linear;
@@ -175,6 +192,7 @@ span.underline {
   position: relative;
   grid-column-start: 5;
   grid-row-start: 2;
+  align-self: center;
   animation-name: spin;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -188,6 +206,7 @@ span.underline {
   position: relative;
   grid-column-start: 6;
   grid-row-start: 2;
+  align-self: center;
   animation-name: spin;
   animation-duration: 3.82s;
   animation-timing-function: linear;
@@ -204,3 +223,4 @@ span.underline {
   animation-iteration-count: infinite;
   background-color: rgba(255, 255, 128, 0.1);
 }
+
