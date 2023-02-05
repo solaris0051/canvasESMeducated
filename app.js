@@ -244,6 +244,7 @@ btn[4].addEventListener(
   "click",
   () => {
     for (let i = 0; i < canvasID.length; i++) {
+      document.getElementById(canvasID[i]).classList.toggle(`canvas${i + 1}`);
       document.getElementById(canvasID[i]).classList.toggle(`canvas0${i + 1}`);
     }
   },

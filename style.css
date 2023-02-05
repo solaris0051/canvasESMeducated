@@ -20,7 +20,7 @@ body {
 .wrapper {
   min-height: 100%;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: minmax(55px, max-content) 1fr minmax(55px, max-content);
 }
 
 header {
@@ -35,8 +35,8 @@ header {
 
 main {
   display: grid;
-  grid-template-rows: 55px 1fr 55px;
-  grid-template-columns: 55px repeat(5, 1fr) 55px;
+  grid-template-rows: minmax(55px, max-content) 1fr minmax(55px, max-content);
+  grid-template-columns: minmax(55px, max-content) repeat(5, 1fr) minmax(55px, max-content);
 }
 
 footer {
@@ -68,6 +68,7 @@ span.underline {
 
 .canvas1 {
   z-index: 1;
+  position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
   animation-name: spin;
@@ -80,6 +81,7 @@ span.underline {
 
 .canvas2 {
   z-index: 2;
+  position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
   animation-name: spin;
@@ -92,6 +94,7 @@ span.underline {
 
 .canvas3 {
   z-index: 3;
+  position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
   animation-name: spin;
@@ -104,6 +107,7 @@ span.underline {
 
 .canvas4 {
   z-index: 4;
+  position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
   animation-name: spin;
@@ -116,6 +120,7 @@ span.underline {
 
 .canvas5 {
   z-index: 5;
+  position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
   animation-name: spin;
@@ -126,17 +131,9 @@ span.underline {
   background-color: rgba(255, 255, 128, 0.1);
 }
 
-.speeder {
-  animation-name: spin;
-  animation-duration: 900ms;
-  animation-timing-function: linear;
-  animation-direction: reverse;
-  animation-iteration-count: infinite;
-  background-color: rgba(255, 255, 128, 0.1);
-}
-
 .canvas01 {
   z-index: 1;
+  position: relative;
   grid-column-start: 2;
   grid-row-start: 2;
   animation-name: spin;
@@ -149,6 +146,7 @@ span.underline {
 
 .canvas02 {
   z-index: 2;
+  position: relative;
   grid-column-start: 3;
   grid-row-start: 2;
   animation-name: spin;
@@ -161,6 +159,7 @@ span.underline {
 
 .canvas03 {
   z-index: 3;
+  position: relative;
   grid-column-start: 4;
   grid-row-start: 2;
   animation-name: spin;
@@ -173,6 +172,7 @@ span.underline {
 
 .canvas04 {
   z-index: 4;
+  position: relative;
   grid-column-start: 5;
   grid-row-start: 2;
   animation-name: spin;
@@ -185,10 +185,20 @@ span.underline {
 
 .canvas05 {
   z-index: 5;
+  position: relative;
   grid-column-start: 6;
   grid-row-start: 2;
   animation-name: spin;
   animation-duration: 3.82s;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  background-color: rgba(255, 255, 128, 0.1);
+}
+
+.speeder {
+  animation-name: spin;
+  animation-duration: 900ms;
   animation-timing-function: linear;
   animation-direction: reverse;
   animation-iteration-count: infinite;
