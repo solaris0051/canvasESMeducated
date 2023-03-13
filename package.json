@@ -18,11 +18,11 @@
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
-    "mini-css-extract-plugin": "^2.7.2",
+    "mini-css-extract-plugin": "^2.7.3",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.0.2",
     "postcss-preset-env": "^8.0.1",
-    "webpack": "^5.75.0",
+    "webpack": "^5.76.1",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   },
@@ -39,6 +39,6 @@
   },
   "homepage": "https://github.com/solaris0051/canvasESMeducated#readme",
   "dependencies": {
-    "npm-check-updates": "^16.7.9"
+    "npm-check-updates": "^16.7.12"
   }
 }
