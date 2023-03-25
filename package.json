@@ -21,8 +21,8 @@
     "mini-css-extract-plugin": "^2.7.5",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.1.0",
-    "postcss-preset-env": "^8.0.1",
-    "webpack": "^5.76.2",
+    "postcss-preset-env": "^8.1.0",
+    "webpack": "^5.76.3",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.1"
   },
@@ -39,6 +39,6 @@
   },
   "homepage": "https://github.com/solaris0051/canvasESMeducated#readme",
   "dependencies": {
-    "npm-check-updates": "^16.7.13"
+    "npm-check-updates": "^16.8.0"
   }
 }
