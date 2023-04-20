@@ -1,5 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
@@ -8,7 +10,7 @@ module.exports = {
   },
 
   output: {
-    filename: "main.js",
+    filename: "bunble.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -62,9 +64,14 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "style.css",
+      filename: "src/style.css"
     }),
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+      favicon: "src/favicon.ico",
+    })
   ],
+
   devtool: devMode ? "source-map" : "eval",
   watchOptions: {
     ignored: /node_modules/,

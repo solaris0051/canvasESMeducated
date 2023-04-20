@@ -3,15 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self';script-src 'self';font-src 'self';style-src 'self';object-src 'none'" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Adopting-ESM-with-2D-contexts-put-on-a-canvas." />
   <title>canvasESMeducated</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="preload" as="style" href="style.css" />
-  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-  <script type="module" src="app.js"></script>
 </head>
 
 <body>
@@ -30,10 +24,10 @@
         赤色ボール出現
       </button>
       <button class="splitter" type="button">
-        中央1軸回転 <=>水平5軸回転
+        中央1軸回転 ⇔ 水平5軸回転
       </button>
       <button class="canvas_speeder" type="button">
-        高速回転 <=> 低速回転
+        高速回転 ⇔ 低速回転
       </button>
       <button class="clear_canvas5" type="button">
         ボールクリア: <span class="underline">ボールを停止させてから</span>ここをClick<br />
@@ -48,8 +42,8 @@
     </header>
     <p>ボール跳躍開始: <span class="underline">CANVASを</span> <span class="click">Click</span><br>
       跳躍スピードアップ: <span class="underline">CANVASを</span>繰り返し <span class="click">Click</span><br>
-      ボール停止: CANVAS <span class="click">Click</span> 回数分、<span class="underline">CANVASから</span><span
-        class="click"> Mouse out</span><br>
+      ボール停止: CANVAS <span class="click">Click</span> 回数分、<span class="underline">CANVASから</span><span class="click">
+        Mouse out</span><br>
       <span class="click">Click</span> & <span class="click">Mouse-out</span> をお楽しみください。
     </p>
     <main>
