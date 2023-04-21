@@ -40,6 +40,6 @@
   },
   "homepage": "https://github.com/solaris0051/canvasESMeducated#readme",
   "dependencies": {
-    "npm-check-updates": "^16.10.8"
+    "npm-check-updates": "^16.10.9"
   }
 }
