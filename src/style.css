@@ -75,152 +75,94 @@ span.underline {
   text-decoration: underline;
 }
 
-.canvas1 {
-  z-index: 1;
+.canvas1,
+.canvas2,
+.canvas3,
+.canvas4,
+.canvas5,
+.canvas01,
+.canvas02,
+.canvas03,
+.canvas04,
+.canvas05{
   position: relative;
-  grid-column-start: 4;
   grid-row-start: 2;
   align-self: center;
   animation-name: spin;
-  animation-duration: 10s;
   animation-timing-function: linear;
-  animation-direction: reverse;
   animation-iteration-count: infinite;
-  background-color: transparent;
 }
 
-.canvas2 {
-  z-index: 2;
-  position: relative;
-  grid-column-start: 4;
-  grid-row-start: 2;
-  align-self: center;
-  animation-name: spin;
-  animation-duration: 7.64s;
-  animation-timing-function: linear;
-  animation-direction: normal;
-  animation-iteration-count: infinite;
-  background-color: transparent;
-}
-
-.canvas3 {
-  z-index: 3;
-  position: relative;
-  grid-column-start: 4;
-  grid-row-start: 2;
-  align-self: center;
-  animation-name: spin;
-  animation-duration: 6.18s;
-  animation-timing-function: linear;
-  animation-direction: reverse;
-  animation-iteration-count: infinite;
-  background-color: transparent;
-}
-
-.canvas4 {
-  z-index: 4;
-  position: relative;
-  grid-column-start: 4;
-  grid-row-start: 2;
-  align-self: center;
-  animation-name: spin;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-direction: normal;
-  animation-iteration-count: infinite;
-  background-color: transparent;
-}
-
+.canvas1,
+.canvas2,
+.canvas3,
+.canvas4,
 .canvas5 {
-  z-index: 5;
-  position: relative;
   grid-column-start: 4;
-  grid-row-start: 2;
-  align-self: center;
-  animation-name: spin;
-  animation-duration: 3.82s;
-  animation-timing-function: linear;
+}
+
+.canvas1,
+.canvas3,
+.canvas5,
+.canvas01,
+.canvas03,
+.canvas05{
   animation-direction: reverse;
-  animation-iteration-count: infinite;
+}
+
+.canvas1,
+.canvas01{
+  z-index: 1;
+  animation-duration: 10s;
+}
+
+.canvas2,
+.canvas02
+ {
+  z-index: 2;
+  animation-duration: 7.64s;
+}
+
+.canvas3,
+.canvas03 {
+  z-index: 3;
+  animation-duration: 6.18s;
+}
+
+.canvas4,
+.canvas04 {
+  z-index: 4;
+  animation-duration: 5s;
+}
+
+.canvas5,
+.canvas05 {
+  z-index: 5;
+  animation-duration: 3.82s;
   background-color: rgba(255, 255, 128, 0.1);
 }
 
 .canvas01 {
-  z-index: 1;
-  position: relative;
   grid-column-start: 2;
-  grid-row-start: 2;
-  align-self: center;
-  animation-name: spin;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-direction: reverse;
-  animation-iteration-count: infinite;
-  background-color: transparent;
 }
 
 .canvas02 {
-  z-index: 2;
-  position: relative;
   grid-column-start: 3;
-  grid-row-start: 2;
-  align-self: center;
-  animation-name: spin;
-  animation-duration: 7.64s;
-  animation-timing-function: linear;
-  animation-direction: normal;
-  animation-iteration-count: infinite;
-  background-color: transparent;
 }
 
 .canvas03 {
-  z-index: 3;
-  position: relative;
   grid-column-start: 4;
-  grid-row-start: 2;
-  align-self: center;
-  animation-name: spin;
-  animation-duration: 6.18s;
-  animation-timing-function: linear;
-  animation-direction: reverse;
-  animation-iteration-count: infinite;
-  background-color: transparent;
 }
 
 .canvas04 {
-  z-index: 4;
-  position: relative;
   grid-column-start: 5;
-  grid-row-start: 2;
-  align-self: center;
-  animation-name: spin;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-direction: normal;
-  animation-iteration-count: infinite;
-  background-color: transparent;
 }
 
 .canvas05 {
-  z-index: 5;
-  position: relative;
   grid-column-start: 6;
-  grid-row-start: 2;
-  align-self: center;
-  animation-name: spin;
-  animation-duration: 3.82s;
-  animation-timing-function: linear;
-  animation-direction: reverse;
-  animation-iteration-count: infinite;
   background-color: rgba(255, 255, 128, 0.1);
 }
 
 .speeder {
-  animation-name: spin;
   animation-duration: 900ms;
-  animation-timing-function: linear;
-  animation-direction: reverse;
-  animation-iteration-count: infinite;
-  background-color: rgba(255, 255, 128, 0.1);
 }
-
