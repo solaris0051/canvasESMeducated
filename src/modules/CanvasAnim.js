@@ -46,9 +46,8 @@ export const CanvasAnim = () => {
     reqA = window.requestAnimationFrame(draw);
   }
 
-  canvas.addEventListener("pointerdown", (event) => {
+  canvas.addEventListener("click", (event) => {
     reqA = window.requestAnimationFrame(draw);
-    canvas.releasePointerCapture;
   });
 
   canvas.addEventListener("pointerout", (event) => {
