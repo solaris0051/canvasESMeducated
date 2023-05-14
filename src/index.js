@@ -39,7 +39,7 @@ for (let i = 0; i < canv.length; i++) {
 btn[0].addEventListener(
   "click",
   () => {
-    import("./modules/square.js").then((Module) => {
+    import("./modules/square.js").then(Module => {
       const square = [
         new Module.Square(
           canv[0].ctx,
@@ -89,7 +89,7 @@ btn[0].addEventListener(
 btn[1].addEventListener(
   "click",
   () => {
-    import("./modules/circle.js").then((Module) => {
+    import("./modules/circle.js").then(Module => {
       // greenBlue
       const circle = [
         new Module.Circle(
@@ -176,7 +176,7 @@ btn[1].addEventListener(
 btn[2].addEventListener(
   "click",
   () => {
-    import("./modules/triangle.js").then((Module) => {
+    import("./modules/triangle.js").then(Module => {
       const triangle = [
         new Module.Triangle(
           canv[3].ctx,
@@ -233,7 +233,7 @@ btn[2].addEventListener(
 btn[3].addEventListener(
   "click",
   () => {
-    import("./modules/CanvasAnim.js").then((Module) => {
+    import("./modules/CanvasAnim.js").then(Module => {
       Module.CanvasAnim();
     });
   },
