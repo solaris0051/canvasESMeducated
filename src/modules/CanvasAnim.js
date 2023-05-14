@@ -4,7 +4,7 @@ export const CanvasAnim = () => {
 
   let reqA;
 
-  const circle = {
+  const ball = {
     x: 48,
     y: 48,
     vx: 0.8,
@@ -32,16 +32,16 @@ export const CanvasAnim = () => {
 
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    circle.drawGrad();
-    circle.x += circle.vx;
-    circle.y += circle.vy;
-    circle.vx *= 0.9999;
-    circle.vx += 0.1;
-    if (circle.x + circle.vx > canvas.height || circle.x + circle.vx < 0) {
-      circle.vx = -circle.vx;
+    ball.drawGrad();
+    ball.x += ball.vx;
+    ball.y += ball.vy;
+    ball.vx *= 0.9999;
+    ball.vx += 0.1;
+    if (ball.x + ball.vx > canvas.height || ball.x + ball.vx < 0) {
+      ball.vx = -ball.vx;
     }
-    if (circle.y + circle.vy > canvas.width || circle.y + circle.vy < 0) {
-      circle.vy = -circle.vy;
+    if (ball.y + ball.vy > canvas.width || ball.y + ball.vy < 0) {
+      ball.vy = -ball.vy;
     }
     reqA = window.requestAnimationFrame(draw);
   }
@@ -50,9 +50,9 @@ export const CanvasAnim = () => {
     reqA = window.requestAnimationFrame(draw);
   });
 
-  canvas.addEventListener("mouseout", (event) => {
+  canvas.addEventListener("pointerout", (event) => {
     window.cancelAnimationFrame(reqA);
   });
 
-  circle.drawGrad();
+  ball.drawGrad();
 };
