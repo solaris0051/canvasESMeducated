@@ -23,6 +23,16 @@ body {
   grid-template-rows: minmax(55px, auto) 1fr minmax(55px, auto);
 }
 
+body > header {
+  position: fixed;
+  top: 0;
+}
+
+body > footer {
+  position: fixed;
+  bottom: 0;
+}
+
 header {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -166,3 +176,4 @@ span.underline {
 .speeder {
   animation-duration: 900ms;
 }
+
