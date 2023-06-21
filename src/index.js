@@ -17,21 +17,15 @@ const btn = [
 ];
 
 // length of an edge of a canvas
-const edge_of_canvas = 256;
-
+// const edge_of_canvas = 256;
+const edge_of_canvas = (window.innerWidth - 55 * 2) / 5;
 // storing ID of canvases
 const canvasID = ["canvas1", "canvas2", "canvas3", "canvas4", "canvas5",]
 
 // create canvases
-const canv = [
-  new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`, canvasID[0]),
-  new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`, canvasID[1]),
-  new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`, canvasID[2]),
-  new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`, canvasID[3]),
-  new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`, canvasID[4]),
-];
-
-for (let i = 0; i < canv.length; i++) {
+const canv = [];
+for (let i = 0; i < canvasID.length; i++) {
+  canv.push(new Canvas(`${edge_of_canvas}`, `${edge_of_canvas}`, canvasID[i]));
   canv[i].create();
 }
 
