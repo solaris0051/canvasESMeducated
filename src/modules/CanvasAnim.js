@@ -9,7 +9,7 @@ export const CanvasAnim = () => {
     y: 48,
     vx: 0.8,
     vy: 1.7,
-    radius: 48,
+    radius: 16,
     color: "#FF0000",
     drawGrad() {
       const grad = ctx.createRadialGradient(

@@ -17,8 +17,7 @@ const btn = [
 ];
 
 // length of an edge of a canvas
-// const edge_of_canvas = 256;
-const edge_of_canvas = (window.innerWidth - 55 * 2) / 5;
+const edge_of_canvas = (window.innerWidth - 70 * 2) / 5;
 // storing ID of canvases
 const canvasID = ["canvas1", "canvas2", "canvas3", "canvas4", "canvas5",]
 
