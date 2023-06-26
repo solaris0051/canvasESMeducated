@@ -72,6 +72,7 @@ module.exports = {
     })
   ],
 
+
   devtool: devMode ? "source-map" : "eval",
   watchOptions: {
     ignored: /node_modules/,
