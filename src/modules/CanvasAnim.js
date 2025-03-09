@@ -30,9 +30,7 @@ export const CanvasAnim = () => {
     },
   };
 
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ball.drawGrad();
+  function updateBallPosition() {
     ball.x += ball.vx;
     ball.y += ball.vy;
     ball.vx *= 0.9999;
@@ -43,6 +41,12 @@ export const CanvasAnim = () => {
     if (ball.y + ball.vy > canvas.width || ball.y + ball.vy < 0) {
       ball.vy = -ball.vy;
     }
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ball.drawGrad();
+    updateBallPosition();
     reqA = window.requestAnimationFrame(draw);
   }
 
