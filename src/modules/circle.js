@@ -28,5 +28,6 @@ class Circle {
     this.ctx.fill();
   }
 }
+
 // exporting.
-export { Circle };
+export { Circle, degToRad };

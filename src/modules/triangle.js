@@ -14,14 +14,16 @@ class Triangle {
   }
 
   draw() {
-    this.ctx.fillStyle = this.color;
-    this.ctx.beginPath();
-    this.ctx.moveTo(this.x, this.y);
-    this.ctx.lineTo(this.x + this.length, this.y);
-    const height = (this.length / 2) * Math.tan(degToRad(60));
-    this.ctx.lineTo(this.x + this.length / 2, this.y + height);
-    this.ctx.lineTo(this.x, this.y);
-    this.ctx.fill();
+    const { ctx, x, y, length, color } = this;
+    const height = (length / 2) * Math.tan(degToRad(60));
+
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x + length, y);
+    ctx.lineTo(x + length / 2, y + height);
+    ctx.lineTo(x, y);
+    ctx.fill();
   }
 }
 // exporting.

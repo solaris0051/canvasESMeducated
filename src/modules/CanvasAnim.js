@@ -2,7 +2,7 @@ export const CanvasAnim = () => {
   const canvas = document.getElementById("canvas5");
   const ctx = canvas.getContext("2d");
 
-  let reqA;
+  let animationFrameId;
 
   const ball = {
     x: 48,
@@ -47,16 +47,22 @@ export const CanvasAnim = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ball.drawGrad();
     updateBallPosition();
-    reqA = window.requestAnimationFrame(draw);
+    animationFrameId = window.requestAnimationFrame(draw);
   }
 
-  canvas.addEventListener("click", (event) => {
-    reqA = window.requestAnimationFrame(draw);
-  });
+  function startAnimation() {
+    animationFrameId = window.requestAnimationFrame(draw);
+  }
 
-  canvas.addEventListener("pointerout", (event) => {
-    window.cancelAnimationFrame(reqA);
-  });
+  function stopAnimation() {
+    window.cancelAnimationFrame(animationFrameId);
+  }
 
+  function addEventListeners() {
+    canvas.addEventListener("click", startAnimation);
+    canvas.addEventListener("pointerout", stopAnimation);
+  }
+
+  addEventListeners();
   ball.drawGrad();
 };

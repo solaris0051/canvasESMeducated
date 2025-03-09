@@ -1,18 +1,16 @@
-// preparing for drawing a square.
+// Preparing for drawing a square.
 
 class Square {
   constructor(ctx, length, x, y, color) {
-    this.ctx = ctx;
-    this.length = length;
-    this.x = x;
-    this.y = y;
-    this.color = color;
+    Object.assign(this, { ctx, length, x, y, color });
   }
 
   draw() {
-    this.ctx.fillStyle = this.color;
-    this.ctx.fillRect(this.x, this.y, this.length, this.length);
+    const { ctx, color, x, y, length } = this;
+    ctx.fillStyle = color;
+    ctx.fillRect(x, y, length, length);
   }
 }
-// exporting.
+
+// Exporting.
 export { Square };

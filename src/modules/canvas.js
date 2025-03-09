@@ -10,12 +10,11 @@ class Canvas {
   create() {
     if (this.ctx !== null) {
       return;
-    } else {
-      const canvasElem = document.getElementById(this.id);
-      canvasElem.width = this.width;
-      canvasElem.height = this.height;
-      this.ctx = canvasElem.getContext("2d");
     }
+    const canvasElem = document.getElementById(this.id);
+    canvasElem.width = this.width;
+    canvasElem.height = this.height;
+    this.ctx = canvasElem.getContext("2d");
   }
 }
 export { Canvas };
