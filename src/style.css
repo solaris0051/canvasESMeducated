@@ -1,3 +1,90 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #b3e820;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: minmax(55px, auto) 1fr minmax(55px, auto);
+}
+
+body > header {
+  position: fixed;
+  top: 0;
+}
+
+body > footer {
+  position: fixed;
+  bottom: 0;
+}
+
+header {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  height: 100%;
+  color: #fffff0;
+  background-color: #0000cd;
+}
+
+main {
+  display: grid;
+  grid-template-rows: minmax(55px, auto) 1fr minmax(55px, auto);
+  grid-template-columns: minmax(55px, auto) repeat(5, 1fr) minmax(55px, auto);
+}
+
+footer {
+  background-color: #0000cd;
+  text-align: center;
+  color: #fffff0;
+}
+
+button {
+  margin: 0.2em;
+  height: auto;
+  width: auto;
+  border-radius: 0.75em;
+  border-width: thin;
+  border-color: #b3e820;
+  background-color: mediumaquamarine;
+  color: #103a89;
+  text-align: left;
+}
+
+button:hover {
+  border-style: dashed;
+  background-color: #ec7f63;
+}
+
+p{
+  font-size: 1em;
+  text-align: center;
+}
+
+span.click {
+  color: #103a89;
+}
+
+span.underline {
+  text-decoration: underline;
+}
+
 .canvas1,
 .canvas2,
 .canvas3,
@@ -7,7 +94,7 @@
 .canvas02,
 .canvas03,
 .canvas04,
-.canvas05 {
+.canvas05{
   position: relative;
   grid-row-start: 2;
   align-self: center;
@@ -29,18 +116,19 @@
 .canvas5,
 .canvas01,
 .canvas03,
-.canvas05 {
+.canvas05{
   animation-direction: reverse;
 }
 
 .canvas1,
-.canvas01 {
+.canvas01{
   z-index: 1;
   animation-duration: 10s;
 }
 
 .canvas2,
-.canvas02 {
+.canvas02
+ {
   z-index: 2;
   animation-duration: 7.64s;
 }
@@ -88,3 +176,4 @@
 .speeder {
   animation-duration: 900ms;
 }
+
